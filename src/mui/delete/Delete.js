@@ -44,7 +44,7 @@ class Delete extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        this.props.crudDelete(this.props.resource, this.props.id, this.getBasePath());
+        this.props.crudDelete(this.props.resource, this.props.id, this.props.data, this.getBasePath());
     }
 
     goBack() {
